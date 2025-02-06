@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="ko">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    
+    <!-- css -->
+    <link media="all" type="text/css" rel="stylesheet" href="css/font.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/common.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/contents.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/board.css">
+    <!-- js -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <title> list </title>
+</head>
+
+<body class="list bg-w">
+    <div class="wrap">
+        <!-- header -->
+        <header id="header" class="header header-w">
+            <div class="headerIn">
+                <h1><a href="/" class="logo">GCC사관학교</a></h1>
+                <nav class="gnb topmenu">
+                    <ul>
+                        <li><a href="home.html">강의실 홈<span></span></a></li>
+                        <li><a href="player.html">학습 하기<span></span></a></li>
+                        <li><a href="#">만족도 조사<span></span></a></li>
+                        <li><a href="#">시험 응시<span></span></a></li>
+                        <li><a href="#">강의 계획서<span></span></a></li>
+                        <li class="active"><a href="list.html">공지사항<span></span></a></li>
+                        <li><a href="#">Q&A<span></span></a></li>
+                        <li><a href="#">학습자료<span></span></a></li>
+                    </ul>
+                </nav>
+                <!-- mobile -->
+                <nav class="m_open_btn w-100">
+                    <button class="btn btn-xs pl-0">
+                        <i class="ri-menu-2-fill h2"></i>
+                    </button>
+                </nav>
+                <nav class="nav mobile">
+                    <button class="closeBtn"><i class="ri-close-line h3"></i></button>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="home.html">- 강의실 홈</a></li>
+                            <li><a href="player.html">- 학습 하기</a></li>
+                            <li><a href="#">- 만족도 조사</a></li>
+                            <li><a href="#">- 시험 응시</a></li>
+                            <li><a href="#">- 강의 계획서</a></li>
+                            <li><a href="list.html">- 공지사항</a></li>
+                            <li><a href="#">- Q&A</a></li>
+                            <li><a href="#">- 학습자료</a></li>
+                        </ul>
+                    </div>
+                    <div class="dark"></div>
+                </nav>
+                <!-- mobile -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- main -->
+        <main class="mainArea">
+            <div class="cont-inner listPage">
+                <div class="table_top">      
+					<div class="searchBox">
+						<div class="listBox">
+	                       	<div class="selectBox"></div>
+						</div>
+						<div class="textBox">
+							<div class="textBoxIn">
+								<div class="inputBox">
+									<input type="text" id="sel_word" name="searchText" title="검색어를 입력하세요" placeholder="검색어를 입력하세요">
+									<button type="button" title="검색하기">검색</button>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="floatBox">
+			            <div class="floatBoxL">
+			                <div class="writing_btn">글작성</div>
+			            </div>
+			        </div>	  
+				</div>
+                <table class="table_normal mt0">
+					<caption>공지사항</caption>
+					<colgroup>
+						<col style="width:9%;">
+						<col>
+						<col style="width:9%;">
+						<col style="width:12%;">
+						<col style="width:10%;">
+                        <col style="width:10%;">
+					</colgroup>
+					<thead id="listTh">
+						<tr class="mobH">
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성자</th>
+							<th>조회수</th>
+							<th>작성일자</th>
+                            <th>처리상태</th>
+						</tr>
+					</thead>
+					<tbody id="listForm">
+					
+						<tr>
+							<td>1</td>
+							<td class="al">
+								<div class="label_title icon">
+									<div class="label_titleR">
+									
+									<a class="label_titleLink" href="#">
+										<span class="label_titleLinkIn"><span class="txt">공지사항 제목입니다 공지사항 제목입니다 공지사항 제목입니다</span></span>
+									</a>
+									
+									</div>
+								</div>
+								<ul class="mobBox">
+									<li>등록일 2024/09/26</li>
+									<li>조회 539</li>
+									<li>24.01.03</li>
+                                    <li>처리완료</li>
+								</ul>
+							</td>
+							<td class="mobH">
+								<div class="iconBox">
+                                    아무개
+								</div>
+							</td>
+							<td class="mobH">111</td>
+							<td class="mobH">24.01.03</td>
+                            <td class="mobH">처리완료</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="al">
+								<div class="label_title icon">
+									<div class="label_titleR">
+									
+									<a class="label_titleLink" href="#">
+										<span class="label_titleLinkIn"><span class="txt">공지사항 제목입니다 공지사항 제목입니다 공지사항 제목입니다</span></span>
+									</a>
+									
+									</div>
+								</div>
+								<ul class="mobBox">
+									<li>등록일 2024/09/26</li>
+									<li>조회 539</li>
+									<li>24.01.03</li>
+                                    <li>처리완료</li>
+									</li>
+								</ul>
+							</td>
+							<td class="mobH">
+								<div class="iconBox">
+                                    아무개
+								</div>
+							</td>
+							<td class="mobH">111</td>
+							<td class="mobH">24.01.03</td>
+                            <td class="mobH">처리완료</td>
+						</tr>
+					</tbody>
+				</table>
+                <div id="listPage" class="pagination">
+                    <a href="#" class="d_prev" style="cursor:default;"><span class="ir">'제일 처음으로'</span></a><a href="#" class="prev" style="cursor:default;"><span class="ir">'이전 페이지로'</span></a><a class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#" >5</a><a href="#" class="next"><span class="ir">'다음 페이지로'&gt;</span></a><a href="#" class="d_next"><span class="ir">'제일 마지막으로'</span></a>
+                </div>
+            </div>
+        </main>
+        <!-- /main -->
+    </div>
+    
+</body>
+</html>

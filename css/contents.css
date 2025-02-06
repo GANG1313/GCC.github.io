@@ -1,0 +1,841 @@
+@charset "utf-8";
+
+.mainArea {
+	width: 100%;
+	padding: 40px 0;
+}
+
+.mainArea .cont-inner {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.player-fixed {
+	width: calc(100% - 567px);
+}
+
+.learningVideo {
+	padding-bottom: 56.25%;
+	height: 0;
+	background: #000;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.learningVideo source {
+	position:absolute; 
+	left:0; 
+	top:0; 
+	width:100%; 
+	height:100%;
+}
+
+.learning_info {
+	background-color: #373737;
+	padding: 22px 27px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.learning_info .learningTit {
+	font-size: 24px;
+	margin-bottom: 22px;
+	color: #fff;
+}
+
+.learning_info .learningTit span {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.learning_info ul li {
+	color: #d4d4d4;
+	line-height: 1.5em;
+}
+
+.learning_info ul li > b {
+	color: #FF5858;
+}
+
+.learning_info .process-description-box dl {
+	display: flex;
+	margin-bottom: 6px;
+	transition: all 0.5s;
+	font-size: 16px;
+}
+
+.learning_info .process-description-box dl:last-child {
+	margin-bottom: 0;
+}
+
+.learning_info .process-description-box dl dt {
+	width: 90px;
+	color: #fff;
+	font-weight: 500;
+	transition: all 0.5s;
+}
+
+.learning_info .process-description-box dl dd {
+	color: #BFBFBF;
+	transition: all 0.5s;
+}
+
+.learningRight {
+	background-color: #373737;
+	border-radius: 5px;
+	width: 520px;
+}
+
+.learningRight .progress_rate {
+	padding: 50px 0;
+    border-bottom: 1px solid #5C5C5C;
+    margin: 0 30px;
+}
+
+.learningRight .progress_rate h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.learningRight .progress_rate p {
+	font-size: 20px;
+}
+
+#progress-bar {
+	width: 100%;
+	height: 11px;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+#progress-bar::-webkit-progress-bar {
+	background-color: #585858;  /* progress 바 배경색 */
+	border-radius: 50px;
+}
+
+#progress-bar::-webkit-progress-value {
+	background-color:#6662FD; /* progress 바 채워진 부분 색상 */
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.learningRight .learningIndex {
+	padding: 30px 0;
+	overflow-y: scroll;
+    height: 67vh;
+}
+
+/* 스크롤바 스타일 */
+.learningIndex::-webkit-scrollbar {
+	width: 13px;
+}
+
+.learningIndex::-webkit-scrollbar-track {
+	background: #575757; /* 스크롤바 트랙 색상 */
+	border-radius: 10px;
+}
+
+.learningIndex::-webkit-scrollbar-thumb {
+	background-color: #AAAAAA; /* 스크롤바 색상 */
+	border-radius: 10px;
+}
+
+.learningIndex::-webkit-scrollbar-thumb:hover {
+	background-color: #888; /* 스크롤바 호버 색상 */
+}
+
+.learningRight .learningIndex h3 {
+	font-size: 20px;
+	padding: 0 30px 20px;
+}
+
+.learningRight .learningIndex > ul > li {
+	cursor: pointer;
+	padding: 20px 0;
+	line-height: 1.3em;
+	position: relative;
+}
+
+.learningRight .learningIndex > ul > li h4 {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.learningRight .learningIndex > ul > li .chapter-name {
+	font-size: 16px;
+	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.learningRight .learningIndex > ul > li .lecture_time {
+	font-size: 14px;
+	color: #BFBFBF;
+}
+
+.learningRight .learningIndex > ul > li .chapter-chk {
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/chapter-chk.svg) no-repeat center;
+}
+
+.learningRight .learningIndex > ul > li .chapter-chk-complete {
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/chapter-chk-complete.svg) no-repeat center !important;
+}
+
+.learningRight .learningactive {
+	background-color: #4E4E4E;
+}
+
+.learningRight .index_inner {
+	padding: 0 30px;
+}
+
+.sr-only {
+	position: absolute !important;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px !important;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.learning_btn {
+	background-color: #373737;
+	padding: 17px 27px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: -4px;
+}
+
+.btn-wrap {
+	align-items: center;
+}
+
+.course-move .btn-prev {
+	position: relative;
+	margin-left: 0;
+	padding-left: 38px;
+	padding-right: 16px;
+}
+
+.course-move .btn-next {
+	position: relative;
+	margin-right: 0;
+	padding-right: 38px;
+	padding-left: 16px;
+}
+
+.course-move .btn-prev::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	top: 4px;
+	width: 9px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../images/course-prev.svg);
+}
+
+.course-move .btn-next::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+	top: 4px;
+	width: 9px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../images/course-next.svg);
+}
+
+.right_btn_down .down_btn {
+	border: 1px solid #707070;
+	background-color: #424242;
+	border-radius: 5px;
+	padding: 10px 10px;
+	position: relative;
+	padding-left: 34px;
+    padding-right: 13px;
+
+}
+
+.down_btn::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	top: 11px;
+	width: 12px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 100%;
+	background-image: url(../images/Download.svg);
+}
+
+.index_btn .mob-hidden {
+	display: none;
+}
+
+/* 강의실 홈 */
+.mainArea-w .cont-inner {
+    width: 100%;
+}
+
+.learningHome {
+	justify-content: space-between;
+	align-items: center;
+	width: 1600px;
+    margin: 0 auto;
+	transition: all 0.5s;
+}
+
+.learningHome .learningTit h2 {
+	font-size: 36px;
+	margin-bottom: 44px;
+	font-weight: 600;
+}
+
+.learningHome .learningTit  {
+	width: 500px;
+	transition: all 0.5s;
+}
+
+.learningHome .learningTit .process-description-box dl {
+	display: flex;
+	margin-bottom: 6px;
+	transition: all 0.5s;
+}
+
+.learningHome .learningTit .process-description-box dl dt {
+	width: 90px;
+	color: #222;
+	font-weight: 500;
+	transition: all 0.5s;
+}
+
+.learningHome .learningTit .process-description-box dl dd {
+	color: #747474;
+	transition: all 0.5s;
+}
+
+.learningInfo {
+	transition: all 0.5s;
+}
+
+.learningInfoBox {
+	display: flex;
+	gap: 20px;
+	transition: all 0.5s;
+}
+
+.learningInfoBox li {
+	border: 1px solid #E1E1E1;
+	padding: 35px 26px;
+	width: 202px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.learningInfoBox li h4 {
+	font-size: 23px;
+	margin-bottom: 50px;
+	font-weight: 500;
+}
+
+.learningInfoBox li button {
+	font-size: 16px;
+	width: 100%;
+	border-radius: 5px;
+	padding: 12px 0;
+	font-weight: 500;
+}
+
+.learningHomeBt {
+	background-color: rgb(242, 242, 242);
+	width: 100%;
+	padding: 45px 0;
+	margin-top: 45px;
+}
+
+.learningHomeBtinner {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.learningHomeBt ul li {
+	background-color: #fff;
+	padding: 25px 25px;
+	border-radius: 5px;
+}
+
+.supple-information .divider {
+	border: 1px solid #FF2C2C;
+	background-color: #FFF1F1;
+	color: #FF2C2C;
+	display: inline-block;
+	padding: 5px 18px;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.supple-information .select {
+	border: 1px solid #183368;
+	background-color: #eff4ff;
+	color: #183368;
+}
+
+.supple-information .title {
+	font-weight: 500;
+	margin-bottom: 15px;
+	color: #747474;
+}
+
+.supple-information .title2 {
+	font-size: 36px;
+    font-weight: 600;
+}
+
+.supple-information .bot-sub-info {
+	gap: 80px;
+	align-items: flex-end;
+}
+
+.supple-information .bot-sub-info .percentage,
+.supple-information .bot-sub-info .satisfaction,
+.supple-information .bot-sub-info .test {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.supple-information .bot-sub-info .percentage span {
+	font-size: 20px;
+}
+
+.learning-progress {
+	width: 500px !important;
+}
+
+.learning-progress::-webkit-progress-bar {
+	background-color: #eee !important;
+	border-radius: 50px;
+}
+
+.learning-progress::-webkit-progress-value {
+	background-color:#6662FD; /* progress 바 채워진 부분 색상 */
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.standard {
+	float: right;
+	font-size: 15px;
+	color: #747474;
+}
+
+.learningperiod {
+	font-size: 15px;
+	color: #747474;
+}
+
+.learningHomeBtinner .box .box-inner {
+	align-items: center;
+}
+
+.learningHomeBtinner .box .box-inner .btn-box {
+	width: 160px;
+}
+
+.learningHomeBtinner .box .box-inner .btn-box .btnGoDetail {
+	border: 1px solid #183368;
+	color: #183368;
+	border-radius: 5px;
+	font-weight: 500;
+	height: 50px;
+	width: 100%;
+}
+
+/* list */
+
+
+
+@media screen and (max-width: 1600px) {
+    .mainArea .cont-inner {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+	.learningHome {
+		width: 100%;
+        padding: 0 15px;
+	}
+
+	.mainArea-w .cont-inner {
+		padding: 0;
+	}
+
+	.learningHomeBtinner {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.learningHome {
+		flex-wrap: wrap;
+	}
+
+	.learningHome .learningTit h2 {
+		font-size: 33px;
+		margin-bottom: 20px;
+	}
+
+	.learningInfo {
+		margin-top: 20px;
+	}
+
+	.supple-information .bot-sub-info {
+		gap: 50px;
+		align-items: flex-end;
+	}
+
+	.learning-progress {
+		width: 300px !important;
+	}
+}
+
+@media screen and (min-width: 1101px) {
+	.learningRight {
+	   	display: block !important; /* 요소가 보이도록 설정 */
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.mainArea {
+		width: 100%;
+		padding: 25px 0;
+	}
+
+	#learningIndex {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #373737;
+		color: white;
+		overflow-y: auto;
+		z-index: 3000;
+		transition: bottom 0.1s ease-in-out; /* 애니메이션 트랜지션 */
+	}
+
+	.learningRight {
+		display: none;
+	}
+
+	.learningRight .learningIndex > ul > li,
+	.learningRight .learningIndex h3 {
+		text-align: left;
+	}
+
+	.learningRight .progress_rate h3,
+	.learningRight .progress_rate p {
+		font-size: 17px;
+	}
+
+	.player-fixed {
+		width: 100%;
+	}
+
+	.mob-hidden {
+		display: none;
+	}
+	
+	.down_btn {
+		position: relative;
+        margin: 0;
+        padding-left: 23px !important;
+        padding-right: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: #424242;
+        border: 1px solid #515151;
+        border-radius: 0.3rem;
+        transition: background-color 0.15s ease-in-out;
+	}
+
+	.down_btn::before {
+		content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        margin-top: -1rem;
+        margin-left: -1rem;
+        width: 1rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 80% auto;
+	}
+
+	.right_btn_down {
+		border: 0;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.index_btn_hidden .index_btn {
+		display: block;
+		position: relative;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: #424242;
+        border: 1px solid #707070;
+        border-radius: 0.3rem;
+        transition: background-color 0.15s ease-in-out;
+		position: relative;
+	}
+
+	.index_btn_hidden .index_btn::before {
+		content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 72%;
+        margin-top: -1rem;
+        margin-left: -1rem;
+        width: 1rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% auto;
+		background-image: url(../images/index.svg);
+	}
+
+	.index_close_icon {
+        display: inline-block;
+        position: absolute;
+		top: 1rem;
+        right: 1rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        background: url(../images/index_close_icon.png) no-repeat 50% / 1.6rem;
+		background-size: 43%;
+    }
+
+	.learningRight .progress_rate {
+		padding: 80px 0 40px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.mainArea {
+		padding: 0;
+	}
+
+	.mainArea .cont-inner {
+		padding: 0;
+	}
+
+	.mainArea .listPage {
+		padding: 20px 15px;
+	}
+
+	.learning_info {
+		padding: 20px;
+		border-radius: 0;
+	}
+
+	.learning_info .learningTit {
+		font-size: 18px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+
+	.learning_info .learningTit span {
+		font-size: 14px;
+	}
+
+	.learning_info ul li {
+		font-size: 14px;
+	}
+
+	button {
+		font-size: 15px;
+	}
+	
+	.course-move .btn-prev::before,
+	.course-move .btn-next::before {
+		background-size: 80%;
+		top: 2px;
+	}
+
+	.learning_btn {
+		padding: 10px 20px;
+		margin-top: -4px;
+		border-radius: 0;
+	}
+
+	.learning-progress {
+		width: 300px !important;
+	}
+
+	.supple-information .bot-sub-info {
+        display: block;
+    }
+
+	.learningperiod {
+		float: right;
+	} 
+
+	.learningHome {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+	.learningHome .learningTit h2 {
+		font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+	}
+
+	.learningHome .learningTit .process-description-box dl {
+		font-size: 14px;
+	}
+
+	.learning_info .process-description-box dl {
+		font-size: 14px;
+	}
+	
+	#header.header-w .logo {
+		background-size: 60%;
+	}
+
+	.learningInfo {
+		width: 100%;
+	}
+
+	.learningInfoBox li{
+		width: 33.33333%;
+		padding: 20px
+	}
+
+	.learningInfoBox li h4 {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+
+	.learningInfoBox li button {
+		font-size: 12px;
+		padding: 10px 0;
+	}
+
+	.learningHomeBt {
+		background-color: rgb(242, 242, 242);
+		width: 100%;
+		padding: 20px 0;
+		margin-top: 0;
+	}
+
+	.supple-information .divider {
+		font-size: 13px;
+		padding: 5px 15px;
+	}
+
+	.supple-information .title {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	.supple-information .bot-sub-info .percentage, .supple-information .bot-sub-info .satisfaction, .supple-information .bot-sub-info .test {
+		font-size: 18px;
+	}
+
+	.supple-information .bot-sub-info .percentage span {
+		font-size: 13px;
+	}
+
+	.learningHomeBt ul li {
+		padding: 20px;
+	}
+
+	.learningHomeBtinner .box .box-inner .btn-box .btnGoDetail {
+		font-size: 13px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.learning-progress {
+        width: 170px !important;
+    }
+}
+
+@media screen and (max-width: 425px)  {
+	.learning-progress {
+        width: 100% !important;
+    }
+
+	.learningHomeBtinner .box .box-inner {
+		display: block;
+	}
+
+	.learningHomeBtinner .box .box-inner .btn-box {
+		margin-top: 20px;
+		width: auto;
+	}
+
+	.standard,
+	.learningperiod {
+		font-size: 13px;
+	}
+
+	.learningInfoBox {
+		display: block;
+	}
+
+	.learningInfoBox li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.learningInfoBox li:last-child {
+		margin-bottom: 0;
+	}
+}
